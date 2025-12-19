@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -392,7 +392,7 @@ button[type="submit"]:hover {
     .social-icons a {
         margin: 5px;
     }
-=======
+
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -813,5 +813,5 @@ button[type="submit"]:hover {
     .social-icons a {
         margin: 5px;
     }
->>>>>>> 2126e1a (Add header/footer logos and footer edits)
+}
 }
