@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio at Own Designs Ltd - examples of henna tattoos, digital designs, and more.">
+    <title>Own Designs Ltd - Portfolio</title>
+    <link rel="icon" href="logo.jpg.jpeg" sizes="32x32">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg.jpeg" alt="Own Designs Ltd Logo" width="250" height="100">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coreservices.html">Services</a></li>
+                <li><a href="whatweoffer.html">What We Offer</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Portfolio</h1>
+            <p>Here are some examples of our work. Click on an image for more details.</p>
+            <div class="portfolio-item" onclick="openModal('project1')">
+                <img src="image1.webp" alt="Henna Tattoo Design Project" width="300" height="200">
+                <h3>Henna Tattoo Design</h3>
+                <p>Custom bridal henna for a wedding event. Intricate patterns with modern twists.</p>
+            </div>
+            <div class="portfolio-item" onclick="openModal('project2')">
+                <img src="image2.avif" alt="Digital Illustration Project" width="300" height="200">
+                <h3>Digital Illustration</h3>
+                <p>Branding artwork for a startup. Vibrant colors and scalable vector design.</p>
+            </div>
+            <div class="portfolio-item" onclick="openModal('project3')">
+                <img src="image 3.jpg" alt="Interior Design Concept" width="300" height="200">
+                <h3>Interior Design Concept</h3>
+                <p>Mood board for a modern living room. Focus on comfort and aesthetics.</p>
+            </div>
+        </section>
+    </main>
+    <button id="backToTop" aria-label="Back to top">↑</button>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.jpg.jpeg" alt="Own Designs Ltd Footer Logo" width="200" height="80">
+            </div>
+            <p>&copy; 2023 Own Designs Ltd. All rights reserved.</p>
+            <p>Contact: info@owndesigns.co.uk | Phone: +44 123 456 7890</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coreservices.html">Services</a></li>
+                <li><a href="whatweoffer.html">What We Offer</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <form class="newsletter">
+                <label for="newsletter-email">Subscribe to our newsletter:</label>
+                <input type="email" id="newsletter-email" placeholder="Your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+</body>
+</html>
